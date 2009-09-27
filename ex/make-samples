@@ -1,0 +1,18 @@
+use strict;
+use warnings;
+
+use Test::More qw| no_plan |;
+
+use_ok("Fractal::Noisemaker");
+
+my %args = (
+  len => 64,
+  in => "testimage.bmp",
+  quiet => 1,
+);
+
+### Test all simple
+for my $type ( @Fractal::Noisemaker::NOISE_TYPES ) {
+  ok(Fractal::Noisemaker::make(type => $type, %args));
+}
+

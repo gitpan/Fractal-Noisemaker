@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Fractal-Noisemaker
-version:             0.010
+version:             0.011
 abstract:            Visual noise generator
 license:             open_source
 author:              
